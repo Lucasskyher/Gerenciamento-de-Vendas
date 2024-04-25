@@ -13,9 +13,6 @@ class TelaPrincipal:
         self.canvas = tk.Canvas(self.root, width=960, height=540)
         self.canvas.pack()
 
-        self.bg_image = PhotoImage(file="Assets/Images/menuBackground.ppm")
-        self.canvas.create_image(0, 0, anchor=tk.NW, image=self.bg_image)
-
         self.menubar = tk.Menu(self.root)
         
         self.menuCadastro = tk.Menu(self.menubar)
